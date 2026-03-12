@@ -1,59 +1,60 @@
 :root {
-  /* --- NEW PALETTE (Leba Papers 2026) --- */
-  --color-deep-ink: #1B2637;
-  --color-paper-stone: #4A5568;
-  --color-gold: #3B82F6;
-  --color-copper: #B8845F;
-  --color-porcelain: #F8F6F3;
-  --color-linen: #EFEBE4;
-  --color-cloud: #E2DED6;
-  --color-ash: #9A948B;
-  --color-fsc-green: #2D7A4F;
-  --color-link: #2563EB;
+  /* --- NEW PALETTE SYNCHED WITH HOME THEME --- */
+  --color-deep-ink: #121A17;     /* --hyd-dark */
+  --color-paper-stone: #4A5568;  /* Kept readable for body text but adapted */
+  --color-gold: #D4FA5A;         /* --hyd-green (Primary Accent, was blue) */
+  --color-copper: #E6FF4E;       /* --hyd-label */
+  --color-porcelain: #FFFFFF;    /* Pure white primary background */
+  --color-linen: #F9F9F9;        /* --hyd-bg-light */
+  --color-cloud: #F1F3F2;        /* --hyd-card */
+  --color-ash: #888888;
+  --color-fsc-green: #D4FA5A;
+  --color-link: #121A17;
 
   /* Semantic Mappings */
   --text-primary: var(--color-deep-ink);
-  --text-secondary: var(--color-paper-stone);
+  --text-secondary: #555555;
   --text-muted: var(--color-ash);
-  --text-inverse: var(--color-porcelain);
+  --text-inverse: #FFFFFF;
 
   --bg-primary: var(--color-porcelain);
   --bg-alt: var(--color-linen);
   --bg-dark: var(--color-deep-ink);
   --bg-footer: var(--bg-dark);
+  --bg-card: var(--color-cloud);
 
-  /* --- LEGACY COMPATIBILITY (Mapping old vars to new system) --- */
+  /* --- LEGACY COMPATIBILITY --- */
   --bg-canvas: var(--bg-primary);
   --bg-surface: var(--bg-alt);
   --bg-contrast: var(--bg-dark);
   --color-primary: var(--text-primary);
   --color-secondary: var(--text-secondary);
   --color-accent: var(--color-gold);
-  --color-accent-hover: #2563EB;
-  --color-border: rgba(27, 38, 55, 0.1);
+  --color-accent-hover: #121A17; /* Dark hover for neon buttons */
+  --color-border: rgba(0, 0, 0, 0.1);
 
   /* Typography */
-  --font-headings: 'Inter Tight', sans-serif;
-  --font-body: 'Inter Tight', sans-serif;
+  --font-headings: 'Inter Tight', Helvetica, Arial, sans-serif;
+  --font-body: 'Inter Tight', Helvetica, Arial, sans-serif;
   --font-mono: 'JetBrains Mono', monospace;
 
   /* Spacing */
-  --padding-panel: 60px;
-  --max-width: 1400px;
+  --padding-panel: 80px;
+  --max-width: 1300px;
   --gutter: 40px;
 
   /* Radii */
-  --radius-sm: 6px;
-  --radius-md: 10px;
-  --radius-lg: 16px;
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
   --radius-xl: 24px;
   --radius-full: 9999px;
 
   /* Shadows */
-  --shadow-sm: 0 1px 3px rgba(27, 38, 55, 0.06), 0 1px 2px rgba(27, 38, 55, 0.04);
-  --shadow-md: 0 4px 12px rgba(27, 38, 55, 0.08), 0 2px 4px rgba(27, 38, 55, 0.04);
-  --shadow-lg: 0 12px 32px rgba(27, 38, 55, 0.10), 0 4px 8px rgba(27, 38, 55, 0.04);
-  --shadow-gold: 0 4px 16px rgba(59, 130, 246, 0.25);
+  --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 10px 30px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 20px 40px rgba(0, 0, 0, 0.10);
+  --shadow-gold: 0 4px 16px rgba(212, 250, 90, 0.25);
 }
 
 /* Reduced Motion */
@@ -248,165 +249,6 @@ p {
   border-color: white;
 }
 
-/* Header & Nav */
-.site-header {
-  height: 90px;
-  background: var(--bg-primary);
-  border-bottom: 1px solid var(--color-cloud);
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000;
-  display: flex;
-  align-items: center;
-  box-shadow: var(--shadow-sm);
-  /* Gentle shadow */
-}
-
-.header-inner {
-  max-width: var(--max-width);
-  margin: 0 auto;
-  width: 100%;
-  padding: 0 40px;
-  display: flex;
-  align-items: center;
-  height: 100%;
-}
-
-.nav-links {
-  display: flex;
-  gap: 32px;
-  align-items: center;
-  height: 100%;
-}
-
-.header-divider {
-  width: 1px;
-  height: 24px;
-  background-color: var(--color-cloud);
-  margin: 0 24px;
-  display: block;
-}
-
-.nav-links a {
-  font-weight: 500;
-  font-size: 15px;
-  color: var(--text-primary);
-  text-decoration: none;
-  transition: color 0.2s;
-  display: flex;
-  align-items: center;
-  position: relative;
-  height: 100%;
-}
-
-.nav-links a:hover,
-.nav-item-group:hover>a,
-.nav-links a.active {
-  color: var(--color-gold);
-}
-
-/* Active State */
-.nav-links a.active::after {
-  content: '';
-  display: block;
-  width: 100%;
-  height: 2px;
-  background: var(--color-gold);
-  position: absolute;
-  bottom: 0;
-  left: 0;
-}
-
-.header-actions {
-  margin-left: auto;
-  display: flex;
-  align-items: center;
-  gap: 16px;
-}
-
-.btn-pill-dark {
-  background: #1B2637;
-  color: white !important;
-  border-radius: var(--radius-full);
-  padding: 10px 28px;
-  font-size: 0.95rem;
-  font-weight: 700;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  box-shadow: var(--shadow-sm);
-  white-space: nowrap;
-  display: inline-flex;
-}
-
-.btn-pill-dark:hover {
-  background: #2D3A4F;
-  /* Slightly lighter for hover */
-  transform: translateY(-2px);
-  box-shadow: var(--shadow-md);
-  color: white !important;
-}
-
-/* Dropdowns */
-.nav-dropdown {
-  position: absolute;
-  top: 90px;
-  background: white;
-  left: 50%;
-  transform: translateX(-50%) translateY(10px);
-  width: auto;
-  min-width: 200px;
-  padding: 24px;
-  box-shadow: var(--shadow-lg);
-  display: block;
-  opacity: 0;
-  visibility: hidden;
-  z-index: 100;
-  border-radius: var(--radius-md);
-  transition: all 0.3s ease;
-}
-
-.nav-dropdown.mega-menu {
-  width: 100%;
-  max-width: 1000px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 32px;
-  background: var(--bg-primary);
-  /* Mega menu background */
-}
-
-.nav-item-group:hover .nav-dropdown {
-  opacity: 1;
-  visibility: visible;
-  transform: translateX(-50%) translateY(0);
-}
-
-.nav-item-group {
-  height: 100%;
-  display: flex;
-  align-items: center;
-}
-
-.nav-dropdown h4 {
-  color: var(--color-gold);
-  font-size: 14px;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  margin-bottom: 16px;
-}
-
-.nav-dropdown ul li a {
-  color: var(--text-primary);
-  font-size: 15px;
-  padding: 6px 0;
-  display: block;
-}
-
-.nav-dropdown ul li a:hover {
-  color: var(--color-gold);
-  transform: translateX(4px);
-}
 
 
 /* Layout Utilities */

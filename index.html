@@ -1,43 +1,37 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <title>Home | Leba Papers - Industrial Speciality Coatings</title>
-    <!-- Fonts: Inter Tight + JetBrains Mono -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@700&display=swap"
-        rel="stylesheet">
-
-    <!-- CSS -->
-    <link href="css/leba-design.css" rel="stylesheet" />
+        href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;800;900&amp;family=JetBrains+Mono:wght@700&amp;display=swap"
+        rel="stylesheet" />
     <!-- Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-    <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="css/new-theme.css" rel="stylesheet" />
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.35/dist/lenis.min.js"></script>
+    <script src="https://unpkg.com/split-type"></script>
 </head>
 
-<body>
-    <!-- Site Header -->
-    <header class="site-header">
-        <div class="header-inner">
-            <div class="nav-logo">
-                <a href="index.html">
-                    <img src="images/logo.png" alt="Leba Papers"
-                        style="height: 85px; width: auto; display: block; margin-top: -10px; margin-bottom: -10px;">
-                </a>
-            </div>
-            <div class="header-divider"></div>
-            <nav class="nav-links">
-                <a href="about.html">Company</a>
+<body class="hydra-home">
+    <!-- Header Island -->
+    <div class="header-wrap">
+        <nav class="nav-pill">
+            <a class="logo" href="index.html">
+                <img src="images/logohanbee.png" alt="Leba Papers" class="site-logo" style="height: 40px; width: auto; object-fit: contain;">
+            </a>
+            <div class="nav-links">
+                <a href="about.html">COMPANY</a>
                 <div class="nav-item-group">
-                    <a href="#" style="cursor: default;">Graphic Speciality <i data-lucide="chevron-down"
-                            style="width: 14px; margin-left: 4px;"></i></a>
+                    <a href="#">GRAPHIC SPECIALITY</a>
                     <div class="nav-dropdown mega-menu">
                         <div class="dropdown-col">
                             <h4>Covering</h4>
@@ -45,34 +39,30 @@
                                 <li><a href="covering-buckram.html">Buckram</a></li>
                                 <li><a href="covering-classy-covers.html">Classy Covers</a></li>
                             </ul>
-
                         </div>
                         <div class="dropdown-col">
-                            <h4>White & Cream</h4>
+                            <h4>White &amp; Cream</h4>
                             <ul>
                                 <li><a href="whitecream-eco-cream.html">Eco Cream</a></li>
                                 <li><a href="whitecream-ecowhite.html">Eco White</a></li>
                             </ul>
-                            <h4 style="margin-top: 24px;">Kraft & Recycled</h4>
+                            <h4 style="margin-top:24px;">Kraft &amp; Recycled</h4>
                             <ul>
                                 <li><a href="kraft-papers-boards.html">Kraft Papers</a></li>
                                 <li><a href="blackpaperboard-brilliantblack.html">Brilliant Black</a></li>
                             </ul>
                         </div>
                         <div class="dropdown-col">
-                            <h4>Textures & Art</h4>
+                            <h4>Textures &amp; Art</h4>
                             <ul>
                                 <li><a href="textures.html">Textured Boards</a></li>
                                 <li><a href="textures-perfumed-paper-board.html">Perfumed Paper Board</a></li>
                             </ul>
-
                         </div>
                     </div>
                 </div>
-                <!-- Labels -->
                 <div class="nav-item-group">
-                    <a href="#" style="cursor: default;">Labels <i data-lucide="chevron-down"
-                            style="width: 14px; margin-left: 4px;"></i></a>
+                    <a href="#">LABELS</a>
                     <div class="nav-dropdown mega-menu">
                         <div class="dropdown-col">
                             <h4>Paper Labels</h4>
@@ -80,9 +70,6 @@
                                 <li><a href="maplitho-paper-labels.html">Maplitho</a></li>
                                 <li><a href="chromo-paper-labels.html">Chromo</a></li>
                                 <li><a href="highgloss-paper-labels.html">High Gloss</a></li>
-                                <li><a href="fluorescent-paper-labels.html">Fluorescent</a></li>
-                                <li><a href="goldpaper-paper-labels.html">Gold Paper</a></li>
-                                <li><a href="metallisedholographic-paper-labels.html">Metallised Holographic</a></li>
                             </ul>
                         </div>
                         <div class="dropdown-col">
@@ -90,7 +77,6 @@
                             <ul>
                                 <li><a href="pvcclear-film-labels.html">PVC Clear</a></li>
                                 <li><a href="synthetic-film-labels.html">Synthetic</a></li>
-                                <li><a href="polyclear-film-labels.html">Poly Clear</a></li>
                             </ul>
                         </div>
                         <div class="dropdown-col">
@@ -98,555 +84,387 @@
                             <ul>
                                 <li><a href="removable-special-labels.html">Removable</a></li>
                                 <li><a href="kraftpaper-special-labels.html">Kraft Paper</a></li>
-                                <li><a href="blackpaper-special-labels.html">Black Paper</a></li>
                             </ul>
                         </div>
                     </div>
                 </div>
-                <!-- Digital Print Media -->
                 <div class="nav-item-group">
-                    <a href="#" style="cursor: default;">Digital Print <i data-lucide="chevron-down"
-                            style="width: 14px; margin-left: 4px;"></i></a>
-                    <div class="nav-dropdown mega-menu">
-                        <div class="dropdown-col">
-                            <h4>Films</h4>
-                            <ul>
-                                <li><a href="digital-laser-printer-film.html">Laser Printer Film</a></li>
-                                <li><a href="digital-inkjet-films.html">Inkjet Films</a></li>
-                            </ul>
-                        </div>
-                        <div class="dropdown-col">
-                            <h4>Press Media</h4>
-                            <ul>
-                                <li><a href="digital-hp-indigo-sheet.html">HP Indigo (Sheet Fed)</a></li>
-                                <li><a href="digital-hp-indigo-roll.html">HP Indigo (Roll Fed)</a></li>
-                                <li><a href="digital-dry-toner.html">Dry Toner</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-            <div class="header-actions">
-                <a class="btn btn-primary btn-pill-dark" href="contact.html">Get a quote</a>
-            </div>
-            <div class="hamburger mobile-trigger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-    </header>
-
-    <!-- Mobile Menu Overlay -->
-    <!-- Mobile Menu Overlay -->
-    <div class="mobile-nav-overlay">
-        <div class="mobile-scroll-container" style="overflow-y: auto; height: 100%;">
-            <a class="mobile-nav-link" href="about.html">Company</a>
-
-            <!-- Graphic Speciality Mobile Group -->
-            <div class="mobile-nav-group">
-                <div class="mobile-nav-toggle">
-                    Graphic Speciality <i data-lucide="chevron-down" style="width: 18px;"></i>
-                </div>
-                <div class="mobile-nav-submenu">
-                    <div class="submenu-inner">
-                        <div class="mobile-col-group">
-                            <h4>Covering</h4>
-                            <a href="covering-buckram.html">Buckram</a>
-                            <a href="covering-classy-covers.html">Classy Covers</a>
-                        </div>
-                        <div class="mobile-col-group">
-                            <h4>White & Cream</h4>
-                            <a href="whitecream-eco-cream.html">Eco Cream</a>
-                            <a href="whitecream-ecowhite.html">Eco White</a>
-                        </div>
-                        <div class="mobile-col-group">
-                            <h4>Kraft & Recycled</h4>
-                            <a href="kraft-papers-boards.html">Kraft Papers</a>
-                            <a href="blackpaperboard-brilliantblack.html">Brilliant Black</a>
-                        </div>
-                        <div class="mobile-col-group">
-                            <h4>Textures & Art</h4>
-                            <a href="textures.html">Textured Boards</a>
-                            <a href="textures-perfumed-paper-board.html">Perfumed Paper Board</a>
-                        </div>
+                    <a href="#">DIGITAL PRINT</a>
+                    <div class="nav-dropdown mini-menu" style="width: 200px; display:block;">
+                        <ul style="display:flex; flex-direction:column; gap:8px;">
+                            <li><a href="digital-laser-printer-film.html">Laser Printer Film</a></li>
+                            <li><a href="digital-hp-indigo-sheet.html">HP Indigo</a></li>
+                            <li><a href="digital-dry-toner.html">Dry Toner</a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
-
-            <!-- Labels Mobile Group -->
-            <div class="mobile-nav-group">
-                <div class="mobile-nav-toggle">
-                    Labels <i data-lucide="chevron-down" style="width: 18px;"></i>
-                </div>
-                <div class="mobile-nav-submenu">
-                    <div class="submenu-inner">
-                        <div class="mobile-col-group">
-                            <h4>Paper Labels</h4>
-                            <a href="maplitho-paper-labels.html">Maplitho</a>
-                            <a href="chromo-paper-labels.html">Chromo</a>
-                            <a href="highgloss-paper-labels.html">High Gloss</a>
-                            <a href="fluorescent-paper-labels.html">Fluorescent</a>
-                            <a href="goldpaper-paper-labels.html">Gold Paper</a>
-                            <a href="metallisedholographic-paper-labels.html">Metallised Holographic</a>
-                        </div>
-                        <div class="mobile-col-group">
-                            <h4>Film Labels</h4>
-                            <a href="pvcclear-film-labels.html">PVC Clear</a>
-                            <a href="synthetic-film-labels.html">Synthetic</a>
-                            <a href="polyclear-film-labels.html">Poly Clear</a>
-                        </div>
-                        <div class="mobile-col-group">
-                            <h4>Special Labels</h4>
-                            <a href="removable-special-labels.html">Removable</a>
-                            <a href="kraftpaper-special-labels.html">Kraft Paper</a>
-                            <a href="blackpaper-special-labels.html">Black Paper</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Digital Mobile Group -->
-            <div class="mobile-nav-group">
-                <div class="mobile-nav-toggle">
-                    Digital Print <i data-lucide="chevron-down" style="width: 18px;"></i>
-                </div>
-                <div class="mobile-nav-submenu">
-                    <div class="submenu-inner">
-                        <div class="mobile-col-group">
-                            <h4>Films</h4>
-                            <a href="digital-laser-printer-film.html">Laser Printer Film</a>
-                            <a href="digital-inkjet-films.html">Inkjet Films</a>
-                        </div>
-                        <div class="mobile-col-group">
-                            <h4>Press Media</h4>
-                            <a href="digital-hp-indigo-sheet.html">HP Indigo (Sheet Fed)</a>
-                            <a href="digital-hp-indigo-roll.html">HP Indigo (Roll Fed)</a>
-                            <a href="digital-dry-toner.html">Dry Toner</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <a class="mobile-nav-link" href="contact.html">Contact</a>
-        </div>
+            <a class="btn-header" href="contact.html">
+                Contact <span class="arrow">→</span>
+            </a>
+        
+            <button class="mobile-menu-btn" aria-label="Toggle menu"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg></button>
+        </nav>
     </div>
-
-    <!-- Mobile Menu Toggle Script -->
-    <script>
-        document.querySelectorAll('.mobile-nav-toggle').forEach(toggle => {
-            toggle.addEventListener('click', () => {
-                const submenu = toggle.nextElementSibling;
-                const icon = toggle.querySelector('i');
-                toggle.classList.toggle('active');
-                if (submenu.style.maxHeight) {
-                    submenu.style.maxHeight = null;
-                    icon.style.transform = 'rotate(0deg)';
-                } else {
-                    submenu.style.maxHeight = submenu.scrollHeight + "px";
-                    icon.style.transform = 'rotate(180deg)';
-                }
-            });
-        });
-    </script>
-
-    <!-- Active Link Script -->
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const currentPath = window.location.pathname.split('/').pop() || 'index.html';
-            const navLinks = document.querySelectorAll('.nav-links a');
-            navLinks.forEach(link => {
-                const href = link.getAttribute('href');
-                if (href === currentPath || (currentPath === 'index.html' && href === './')) {
-                    link.classList.add('active');
-                }
-            });
-        });
-    </script>
-
-    <!-- Hero Section: Reference-Locked Industrial Architecture -->
-    <!-- B2B Purpose: Authority & Capability Statement -->
-    <section class="panel panel-hero-modern reveal-panel hero-home"
-        style="background-image: url('images/hero-desktop.png');">
-        <div class="main-wrapper">
-            <div class="hero-content-grid">
-                <!-- Left Content Rail -->
-                <div class="hero-text-col">
-                    <p class="label-text">Industrial Speciality Coatings</p>
-                    <h1 class="reveal-text">Global Quality.<br>Expert Solutions.</h1>
-                    <p class="mb-8" style="font-size: 1.15rem; color: rgba(255, 255, 255, 0.9); max-width: 600px;">
-                        Engineering premium paper solutions that combine industrial reliability with aesthetic
-                        excellence for luxury packaging and labeling.
-                    </p>
-
-                    <!-- CTAs: Mobile-Optimized Unified Design -->
-                    <div class="d-flex" style="gap: 24px; align-items: center;">
-                        <a class="btn btn-primary" href="#products">Explore Products</a>
-                        <a class="btn btn-outline" href="contact.html">Request Samples</a>
-                    </div>
-
-                    <!-- Trust Indicators (Subordinate) -->
-                    <div class="hero-stats-row mt-12 hide-on-mobile"
-                        style="border-top: 1px solid rgba(255,255,255,0.2); padding-top: 32px; display: flex; gap: 48px;">
-                        <div>
-                            <span
-                                style="color: #3B82F6; display: block; font-size: 48px; line-height: 1; font-family: 'JetBrains Mono', monospace;">39+</span>
-                            <span style="font-size: 14px; font-weight: 500; color: rgba(255, 255, 255, 0.7);">Years
-                                Experience</span>
-                        </div>
-                        <div>
-                            <span
-                                style="color: #3B82F6; display: block; font-size: 48px; line-height: 1; font-family: 'JetBrains Mono', monospace;">100%</span>
-                            <span style="font-size: 14px; font-weight: 500; color: rgba(255, 255, 255, 0.7);">Premium
-                                Substrates</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Right Visual Anchor (Contextual) -->
-                <div class="hero-visual-col hide-on-mobile">
-                    <!-- Card overlay for specific featured product or capability -->
-                    <div
-                        style="background: white; padding: 32px; border-radius: var(--radius-lg); max-width: 320px; box-shadow: var(--shadow-lg);">
-                        <p class="label-text mb-2"
-                            style="background: none; border-radius: 0; padding: 0; color: var(--text-secondary); backdrop-filter: none; text-shadow: none;">
-                            Featured Capability</p>
-                        <h4 style="color: var(--text-primary) !important; margin-bottom: 16px;">Maplitho & Films</h4>
-                        <p style="font-size: 0.9rem; margin-bottom: 24px; color: var(--text-secondary);">
-                            High-performance substrates for industrial labeling and pharmaceutical applications.
-                        </p>
-                        <a href="maplitho-paper-labels.html"
-                            style="font-size: 0.9rem; font-weight: 600; color: var(--text-primary); text-decoration: underline;">View
-                            Specs &rarr;</a>
-                    </div>
-                </div>
-            </div>
+    <!-- Hero Full -->
+    <section class="hero" style="background-image: url('images/hero-desktop.png');">
+        <div class="hero-inner">
+            <h1>Premium Substrates for a Better Future</h1>
+            <p>Engineering exceptional paper solutions that combine industrial reliability with aesthetic excellence,
+                serving global manufacturing workflows while improving sustainable product quality.</p>
+            <a class="btn-glass" href="#catalogue">
+                Explore Products <span class="icon">→</span>
+            </a>
         </div>
     </section>
-
-    <!-- Mobile Hero Extension (Stats & Visual) -->
-    <section class="hide-on-desktop" style="padding: 40px 0; background: var(--bg-primary);">
-        <div class="main-wrapper">
-            <!-- Trust Indicators (Mobile) -->
-            <div class="hero-stats-row mb-12"
-                style="border-bottom: 1px solid rgba(0,0,0,0.1); padding-bottom: 32px; display: flex; gap: 48px;">
-                <div>
-                    <span class="text-gradient-blue-grey"
-                        style="display: block; font-size: 48px; line-height: 1; font-family: 'JetBrains Mono', monospace;">39+</span>
-                    <span style="font-size: 14px; font-weight: 500; color: var(--text-muted);">Years
-                        Experience</span>
-                </div>
-                <div>
-                    <span class="text-gradient-blue-grey"
-                        style="display: block; font-size: 48px; line-height: 1; font-family: 'JetBrains Mono', monospace;">100%</span>
-                    <span style="font-size: 14px; font-weight: 500; color: var(--text-muted);">Premium
-                        Substrates</span>
-                </div>
+    <!-- Intro -->
+    <section class="sec intro-sec">
+        <div class="main-wrapper intro-grid">
+            <div class="intro-left">
+                <span class="label">INTRODUCTION</span>
             </div>
-
-            <!-- Mobile Visual Card -->
-            <div
-                style="background: white; padding: 32px; border-radius: var(--radius-lg); width: 100%; box-shadow: var(--shadow-lg); border: 1px solid var(--color-cloud);">
-                <p class="label-text mb-2" style="color: var(--text-secondary);">Featured Capability</p>
-                <h4 style="color: var(--text-primary) !important; margin-bottom: 16px;">Maplitho & Films</h4>
-                <p style="font-size: 0.9rem; margin-bottom: 24px; color: var(--text-secondary);">
-                    High-performance substrates for industrial labeling and pharmaceutical applications.
-                </p>
-                <a href="maplitho-paper-labels.html"
-                    style="font-size: 0.9rem; font-weight: 600; color: var(--text-primary); text-decoration: underline;">View
-                    Specs &rarr;</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Section 2: Industries Served -->
-    <section class="panel reveal-panel" style="background: var(--bg-alt);">
-        <div class="main-wrapper">
-            <div class="section-inner">
-                <div class="section-header-flex mb-12">
-                    <div>
-                        <p class="label-text mb-2" style="color: var(--text-secondary);">Industries We Serve</p>
-                        <h2>Engineered for Performance</h2>
-                    </div>
-                    <a href="about.html" class="btn btn-outline" style="font-size: 0.9rem; padding: 12px 24px;">View
-                        Capabilities</a>
-                </div>
-
-                <div class="grid-3" style="column-gap: 40px; row-gap: 40px;">
-                    <!-- Industry 1 -->
-                    <div
-                        style="background: var(--bg-primary); padding: 32px; border-radius: var(--radius-md); box-shadow: var(--shadow-sm);">
-                        <i data-lucide="package"
-                            style="color: var(--text-primary); width: 32px; height: 32px; margin-bottom: 16px;"></i>
-                        <h4>Luxury Packaging</h4>
-                        <p style="font-size: 0.95rem; margin-top: 8px;">High-GSM boards and textured papers for premium
-                            box manufacturing.</p>
-                    </div>
-                    <!-- Industry 2 -->
-                    <div
-                        style="background: var(--bg-primary); padding: 32px; border-radius: var(--radius-md); box-shadow: var(--shadow-sm);">
-                        <i data-lucide="flask-conical"
-                            style="color: var(--text-primary); width: 32px; height: 32px; margin-bottom: 16px;"></i>
-                        <h4>Pharma & Labs</h4>
-                        <p style="font-size: 0.95rem; margin-top: 8px;">Compliance-ready labeling solutions and
-                            medical-grade substrates.</p>
-                    </div>
-                    <!-- Industry 3 -->
-                    <div
-                        style="background: var(--bg-primary); padding: 32px; border-radius: var(--radius-md); box-shadow: var(--shadow-sm);">
-                        <i data-lucide="printer"
-                            style="color: var(--text-primary); width: 32px; height: 32px; margin-bottom: 16px;"></i>
-                        <h4>Industrial Print</h4>
-                        <p style="font-size: 0.95rem; margin-top: 8px;">Reliable runnability for offset, flexo, and
-                            digital printing presses.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Section 3: Product Categories (Catalogue) -->
-    <section class="panel reveal-panel" id="products" style="background: var(--bg-primary);">
-        <div class="main-wrapper">
-            <div class="section-header-flex mb-12">
-                <div>
-                    <p class="label-text text-gradient-blue-grey" style="margin-bottom: 8px;">Our Catalogue</p>
-                    <h2>Material Selections</h2>
-                </div>
-            </div>
-            <div class="grid-3 product-grid">
-                <!-- Graphic Speciality -->
-                <div class="card-modern"
-                    style="background: linear-gradient(135deg, #1B2637 0%, #2D3A4F 100%); padding: 40px; border-radius: var(--radius-md); position: relative; overflow: hidden; color: var(--text-inverse);">
-                    <div class="mb-8" style="position: relative; z-index: 2;">
-                        <i data-lucide="scroll" style="width: 40px; height: 40px; color: white;"></i>
-                    </div>
-                    <h3 style="color: var(--text-inverse); position: relative; z-index: 2;">Graphic Papers</h3>
-                    <p class="mt-4 mb-8"
-                        style="color: var(--text-inverse); opacity: 0.8; font-size: 0.95rem; position: relative; z-index: 2;">
-                        Textured, metallic, and colored boards for high-impact creative print applications.
-                    </p>
-                    <ul
-                        style="margin-bottom: 32px; color: var(--text-inverse); opacity: 0.9; font-size: 0.9rem; position: relative; z-index: 2; padding-left: 20px;">
-                        <li style="margin-bottom: 8px;">• Covering Materials</li>
-                        <li style="margin-bottom: 8px;">• Textured Boards</li>
-                        <li>• Recycled Kraft</li>
-                    </ul>
-                    <a class="btn btn-primary" href="covering-buckram.html"
-                        style="width: 100%; border: 1px solid rgba(255,255,255,0.2); background: rgba(255,255,255,0.1); backdrop-filter: blur(4px); color: var(--text-inverse) !important;">View
-                        Specs</a>
-                </div>
-
-                <!-- Labels -->
-                <div class="card-modern"
-                    style="background: linear-gradient(135deg, #1B2637 0%, #2D3A4F 100%); padding: 40px; border-radius: var(--radius-md); position: relative; overflow: hidden; color: var(--text-inverse);">
-                    <div class="mb-8" style="position: relative; z-index: 2;">
-                        <i data-lucide="tag" style="width: 40px; height: 40px; color: white;"></i>
-                    </div>
-                    <h3 style="color: var(--text-inverse); position: relative; z-index: 2;">Adhesive Labels</h3>
-                    <p class="mt-4 mb-8"
-                        style="color: var(--text-inverse); opacity: 0.8; font-size: 0.95rem; position: relative; z-index: 2;">
-                        Industrial grade self-adhesive papers and films engineered for high-speed capabilities.
-                    </p>
-                    <ul
-                        style="margin-bottom: 32px; color: var(--text-inverse); opacity: 0.9; font-size: 0.9rem; position: relative; z-index: 2; padding-left: 20px;">
-                        <li style="margin-bottom: 8px;">• Chromo & Maplitho</li>
-                        <li style="margin-bottom: 8px;">• PP / PE Films</li>
-                        <li>• Pharmaceutical Specialities</li>
-                    </ul>
-                    <a class="btn btn-primary" href="maplitho-paper-labels.html"
-                        style="width: 100%; border: 1px solid rgba(255,255,255,0.2); background: rgba(255,255,255,0.1); backdrop-filter: blur(4px); color: var(--text-inverse) !important;">View
-                        Specs</a>
-                </div>
-
-                <!-- Custom Solutions -->
-                <div class="card-modern"
-                    style="background: linear-gradient(135deg, #1B2637 0%, #2D3A4F 100%); padding: 40px; border-radius: var(--radius-md); position: relative; overflow: hidden; color: var(--text-inverse);">
-                    <div class="mb-8" style="position: relative; z-index: 2;">
-                        <i data-lucide="settings" style="width: 40px; height: 40px; color: white;"></i>
-                    </div>
-                    <h3 style="color: var(--text-inverse); position: relative; z-index: 2;">Custom Solutions</h3>
-                    <p class="mt-4 mb-8"
-                        style="color: var(--text-inverse); opacity: 0.8; font-size: 0.95rem; position: relative; z-index: 2;">
-                        Tailored coating and converting services for specific industrial requirements.
-                    </p>
-                    <ul
-                        style="margin-bottom: 32px; color: var(--text-inverse); opacity: 0.9; font-size: 0.9rem; position: relative; z-index: 2; padding-left: 20px;">
-                        <li style="margin-bottom: 8px;">• Custom GSM</li>
-                        <li style="margin-bottom: 8px;">• Specific Adhesives</li>
-                        <li>• Tailored Coating</li>
-                    </ul>
-                    <a class="btn btn-primary" href="contact.html"
-                        style="width: 100%; border: 1px solid rgba(255,255,255,0.2); background: rgba(255,255,255,0.1); backdrop-filter: blur(4px); color: var(--text-inverse) !important;">Consult
-                        Engineering</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Section 4: Why Leba / Stats -->
-    <section class="panel reveal-panel" style="background: transparent; color: var(--text-primary);">
-        <div class="main-wrapper">
-            <div class="grid-3" style="grid-template-columns: repeat(4, 1fr); text-align: center;">
-                <div>
-                    <span class="text-gradient-blue-grey"
-                        style="font-size: 48px; line-height: 1; display: block; font-family: 'JetBrains Mono', monospace;">39+</span>
-                    <p class="label-text mt-2" style="color: var(--text-muted);">Years Experience</p>
-                </div>
-                <div>
-                    <span class="text-gradient-blue-grey"
-                        style="font-size: 48px; line-height: 1; display: block; font-family: 'JetBrains Mono', monospace;">100+</span>
-                    <p class="label-text mt-2" style="color: var(--text-muted);">Product Variants</p>
-                </div>
-                <div>
-                    <span class="text-gradient-blue-grey"
-                        style="font-size: 48px; line-height: 1; display: block; font-family: 'JetBrains Mono', monospace;">Top</span>
-                    <p class="label-text mt-2" style="color: var(--text-muted);">Tier Substrates</p>
-                </div>
-                <div>
-                    <span class="text-gradient-blue-grey"
-                        style="font-size: 48px; line-height: 1; display: block; font-family: 'JetBrains Mono', monospace;">Top</span>
-                    <p class="label-text mt-2" style="color: var(--text-muted);">Quality Standards</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Section 6: Operational Scale (Static Image) -->
-    <section class="panel reveal-panel" style="background: var(--bg-primary); padding-bottom: 80px;">
-        <div class="main-wrapper">
-            <div
-                style="border-radius: var(--radius-lg); overflow: hidden; position: relative; height: 500px; background: #1a1a1a;">
-                <img src="images/infrastructure-new.jpg" alt="Leba Papers Industrial Processing Facility"
-                    style="position: absolute; top:0; left:0; width: 100%; height: 100%; object-fit: cover; opacity: 0.8;">
-                <div
-                    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; background: radial-gradient(circle at center, rgba(0,0,0,0) 0%, rgba(0,0,0,0.6) 100%); padding: 40px;">
-                    <p class="label-text mb-4"
-                        style="opacity: 1; color: #ffffff; display: inline-block; background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 9999px; padding: 8px 20px;">
-                        Our Infrastructure</p>
-                    <h2 style="color: white; margin-bottom: 24px;">Scalable Production Capacity</h2>
-                    <p style="color: rgba(255,255,255,0.9); max-width: 600px;">
-                        Operating from a state-of-the-art central hub, we maintain rigorous inventory controls and
-                        high-speed processing for global distribution.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-
-    <!-- Video Modal (Fixed) -->
-    <div id="video-modal"
-        style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.95); z-index: 10000; display: none; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.3s ease;">
-        <div
-            style="position: relative; width: 90%; max-width: 1000px; max-height: 90vh; background: black; border-radius: 12px; overflow: hidden; box-shadow: 0 24px 64px rgba(0,0,0,0.5);">
-            <!-- Close Button Overlay -->
-            <button id="close-video-btn"
-                style="position: absolute; top: 20px; right: 20px; color: white; background: rgba(0,0,0,0.5); border: none; width: 44px; height: 44px; border-radius: 50%; font-size: 24px; cursor: pointer; display: flex; align-items: center; justify-content: center; z-index: 20; backdrop-filter: blur(8px); transition: background 0.2s;">
-                <i data-lucide="x" style="width: 20px; height: 20px;"></i>
-            </button>
-            <video controls id="main-video" style="width: 100%; height: auto; display: block; max-height: 80vh;">
-                <source src="video/sample-vid.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-            </video>
-        </div>
-    </div>
-
-    <!-- Footer -->
-    <footer class="panel mt-12" style="background: var(--bg-dark); color: var(--text-muted);">
-        <div class="main-wrapper grid-3">
-            <div>
-                <h4 class="mb-4" style="color: var(--text-inverse);">Contact Us</h4>
-                <p style="color: inherit; margin-bottom: 8px;"><a href="tel:+919388555999" style="color: inherit;">+91
-                        93 88
-                        555 999</a></p>
-                <p style="color: inherit; margin-bottom: 16px;"><a href="mailto:lebapapers@gmail.com"
-                        style="color: inherit;">lebapapers@gmail.com</a></p>
-                <p style="color: inherit; margin-bottom: 4px;"><strong style="color: var(--text-inverse);">Head
-                        Office</strong></p>
-                <p style="font-size: 0.9rem;">31/741A, Vyttila Junction, Ernakulam – 19,
-                    Kerala</p>
-            </div>
-            <div>
-                <h4 class="mb-4" style="color: var(--text-inverse);">Connect</h4>
-                <div style="display: flex; gap: 16px; flex-wrap: wrap;">
-                    <a href="https://wa.me/919388555999?text=Hello%20LEBA%20Trading%20Agencies,%20I%20would%20like%20to%20enquire%20about%20your%20products.%20Please%20contact%20me."
-                        style="color: #25D366; display: flex; align-items: center; gap: 6px;" target="_blank">
-                        <i data-lucide="message-circle" style="width: 20px;"></i>
-                        Chat on WhatsApp
+            <div class="intro-right">
+                <div class="intro-text">
+                    <h2 data-motion="fade-up" data-motion-delay="1">Leba Papers is a pioneering industrial speciality
+                        paper company that delivers innovative paper
+                        and film solutions to power intensive industries, driving a more sustainable future for
+                        generations to come.</h2>
+                    <a class="btn" data-motion="fade-up" data-motion-delay="2" href="about.html">
+                        Learn More <span class="icon">→</span>
                     </a>
                 </div>
-                <div style="margin-top: 24px;">
-                    <h4 class="mb-2" style="font-size: 1rem; color: var(--text-inverse);">Branch Office</h4>
-                    <p style="font-size: 0.9rem;">Dass Arcade, High Road, Thrissur – 01,
-                        Kerala</p>
-                </div>
-                <div style="margin-top: 24px;">
-                    <h4 class="mb-2" style="font-size: 1rem; color: var(--text-inverse);">Speciality Paper Unit</h4>
-                    <p style="font-size: 0.9rem;">Gala No. G-01, Ground Floor, Multi Storied Industrial
-                        Gala,<br>Puzhakkalpadam Phase I, Thrissur – 680003, Kerala</p>
-                </div>
-            </div>
-            <div>
-                <p style="font-size: 0.9rem;">
-                    ©
-                    <script>document.write(new Date().getFullYear())</script> LEBA PAPERS (Leba Trading Agencies).<br />
-                    <span style="font-size: 0.8rem;">All Rights Reserved.</span>
-                </p>
             </div>
         </div>
+    </section>
+    <!-- Services (What We Do) -->
+    <section class="sec wwd-sec">
+        <div class="main-wrapper wwd-grid">
+            <div class="wwd-left">
+                <span class="label">OUR PORTFOLIO</span>
+            </div>
+            <div class="wwd-right">
+                <h2 class="wwd-title" data-motion="fade-up" data-motion-delay="1">What We Do</h2>
+                <div class="cards">
+                    <a href="textures.html" style="display: block;">
+                        <div class="card" data-motion="fade-up" data-motion-delay="2">
+                            <div class="card-plus">+</div>
+                            <img src="images/wwd-graphic-papers.png" alt="Graphic Papers" class="card-image" />
+                            <h4 data-motion="fade-up" data-motion-delay="1">Graphic Papers</h4>
+                        </div>
+                    </a>
+                    <a href="maplitho-paper-labels.html" style="display: block;">
+                        <div class="card" data-motion="fade-up" data-motion-delay="3">
+                            <div class="card-plus">+</div>
+                            <img src="images/wwd-adhesive-labels.png" alt="Adhesive Labels" class="card-image" />
+                            <h4 data-motion="fade-up" data-motion-delay="2">Adhesive Labels</h4>
+                        </div>
+                    </a>
+                    <a href="contact.html" style="display: block;">
+                        <div class="card" data-motion="fade-up" data-motion-delay="4">
+                            <div class="card-plus">+</div>
+                            <img src="images/wwd-custom-solutions.png" alt="Custom Solutions" class="card-image" />
+                            <h4 data-motion="fade-up" data-motion-delay="3">Custom Solutions</h4>
+                        </div>
+                    </a>
+                    <a href="digital-laser-printer-film.html" style="display: block;">
+                        <div class="card" data-motion="fade-up" data-motion-delay="5">
+                            <div class="card-plus">+</div>
+                            <img src="images/wwd-digital-media.png" alt="Digital Media" class="card-image" />
+                            <h4 data-motion="fade-up" data-motion-delay="4">Digital Media</h4>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Image Banner -->
+    <section class="banner-sec">
+        <div class="banner-inner">
+            <h2 data-motion="fade-up" data-motion-delay="1">Discover the Infrastructure That Powers Global Production
+            </h2>
+            <a class="btn-glass" href="about.html" style="border-radius: 4px;">
+                View Capabilities <span class="icon" style="border-radius:2px;">→</span>
+            </a>
+        </div>
+    </section>
+    <!-- Numbers -->
+    <section class="num-sec">
+        <div class="num-left">
+            <h2 class="num-title" data-motion="fade-up" data-motion-delay="1">Our Numbers <span>→</span></h2>
+        </div>
+        <div class="num-right">
+            <div class="stat" data-motion="fade-up" data-motion-delay="2">
+                <div class="stat-num">39+</div>
+                <div class="stat-label">Years Experience</div>
+            </div>
+            <div class="stat" data-motion="fade-up" data-motion-delay="3">
+                <div class="stat-num">100+</div>
+                <div class="stat-label">Product Variants</div>
+            </div>
+            <div class="stat" data-motion="fade-up" data-motion-delay="4">
+                <div class="stat-num">100%</div>
+                <div class="stat-label">Premium Substrates</div>
+            </div>
+            <div class="stat" data-motion="fade-up" data-motion-delay="5">
+                <div class="stat-num">24/7</div>
+                <div class="stat-label">Global Support</div>
+            </div>
+        </div>
+    </section>
+    <!-- Projects / Catalogue -->
+    <section class="sec proj-sec" id="catalogue">
+        <div class="main-wrapper" style="max-width: 1400px; padding: 0 5%;">
+            <span class="label">CATALOGUE</span>
+            <h2 class="wwd-title" data-motion="fade-up" data-motion-delay="1">Material Selections</h2>
+        </div>
+        <!-- Grid flush layout -->
+        <div class="proj-grid">
+            <div class="proj-item" data-motion="fade-scale" data-motion-delay="2"
+                style="background-image: url('images/material-maplitho.png');">
+                <div class="proj-cap">Maplitho</div>
+            </div>
+            <div class="proj-item" data-motion="fade-scale" data-motion-delay="3"
+                style="background-image: url('images/material-chromo.png');">
+                <div class="proj-cap">Chromo</div>
+            </div>
+            <div class="proj-item" data-motion="fade-scale" data-motion-delay="4"
+                style="background-image: url('images/material-eco-cream.png');">
+                <div class="proj-cap">Eco Cream</div>
+            </div>
+            <div class="proj-item" data-motion="fade-scale" data-motion-delay="5"
+                style="background-image: url('images/material-textured.png');">
+                <div class="proj-cap">Textured</div>
+            </div>
+        </div>
+        <div class="main-wrapper" style="padding-left: 5%;">
+            <a class="btn" data-motion="fade-up" data-motion-delay="6" href="about.html">
+                View All Specs <span class="icon">→</span>
+            </a>
+        </div>
+    </section>
+    <!-- Map Section -->
+    <section class="map-sec">
+        <div class="main-wrapper map-wrapper">
+            <div class="map-text">
+                <h3 data-motion="fade-up" data-motion-delay="1">Leba's premium paper solutions have made a lasting
+                    impact on industries and manufacturers across
+                    Asia, Europe, Middle East, and beyond.</h3>
+                <a class="btn" data-motion="fade-up" data-motion-delay="2" href="contact.html">
+                    View Distribution <span class="icon">→</span>
+                </a>
+            </div>
+            <div class="map-visual">
+                <!-- Simple placeholder, if map image isn't exact, a decorative element works -->
+                <svg height="auto" opacity="0.5" viewbox="0 0 800 400" width="100%">
+                    <circle cx="200" cy="150" fill="var(--hyd-green)" r="4"></circle>
+                    <circle cx="400" cy="100" fill="var(--hyd-green)" r="4"></circle>
+                    <circle cx="600" cy="200" fill="var(--hyd-green)" r="4"></circle>
+                    <circle cx="500" cy="180" fill="var(--hyd-green)" r="4"></circle>
+                    <circle cx="300" cy="250" fill="var(--hyd-green)" r="4"></circle>
+                    <circle cx="700" cy="150" fill="var(--hyd-green)" r="4"></circle>
+                    <!-- stylized lines interconnecting -->
+                    <path d="M200 150 Q300 100 400 100 T600 200" fill="none" stroke="#ccc" stroke-dasharray="4 4">
+                    </path>
+                    <path d="M400 100 Q450 140 500 180" fill="none" stroke="#ccc" stroke-dasharray="4 4"></path>
+                    <path d="M200 150 Q250 200 300 250" fill="none" stroke="#ccc" stroke-dasharray="4 4"></path>
+                </svg>
+            </div>
+        </div>
+    </section>
+    <!-- Final CTA -->
+    <section class="cta-box">
+        <div class="main-wrapper">
+            <span class="label" style="background: black; color: var(--hyd-green);">CONTACT</span>
+            <h2 data-motion="fade-up" data-motion-delay="1">Let's Shape the Future of<br />Premium Packaging Together
+            </h2>
+            <a class="btn" data-motion="fade-up" data-motion-delay="2" href="contact.html">
+                Get In Touch <span class="icon">→</span>
+            </a>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="foot-wrap">
+            <div class="foot-left">
+                <p>Start your project today. Contact us to learn more and let's work together to achieve your goals.</p>
+                <a class="btn-glass" href="contact.html" style="color:white; border-color: rgba(255,255,255,0.2);">
+                    Start a Project <span class="icon">→</span>
+                </a>
+                <div class="foot-logo">
+                <img src="images/logohanbee.png" alt="Leba Papers" class="site-logo" style="height: 40px; width: auto; object-fit: contain;">
+            </div>
+            </div>
+            <div class="foot-right">
+                <div class="foot-col">
+                    <h5>Social</h5>
+                    <ul>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">X</a></li>
+                        <li><a href="#">LinkedIn</a></li>
+                    </ul>
+                </div>
+                <div class="foot-col">
+                    <h5>Pages</h5>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </div>
+<div class="foot-col">
+<h5>Locations</h5>
+<ul>
+<li><a href="https://maps.app.goo.gl/dH8krCvaFFrTH3kt5?g_st=aw" target="_blank">Head Office (Thrissur)</a></li>
+<li><a href="https://maps.app.goo.gl/Mbe93N9HUfGVide56?g_st=aw" target="_blank">Branch (Ernakulam)</a></li>
+<li><a href="https://maps.google.com/?q=10.543257,76.186691" target="_blank">Speciality Unit</a></li>
+</ul>
+</div>
+
+            </div>
+        </div>
+        <div class="foot-bottom">
+            <span>License • Leba Papers 2026</span>
+            <span>All Rights Reserved</span>
+        </div>
     </footer>
-    <!-- Initialize Scripts -->
-    <script src="js/leba-main.js?v=4"></script>
     <script>
         lucide.createIcons();
-
-        // Robust Video Modal Logic with Fade
-        document.addEventListener('DOMContentLoaded', () => {
-            const playBtn = document.getElementById('play-video-btn');
-            const modal = document.getElementById('video-modal');
-            const closeBtn = document.getElementById('close-video-btn');
-            const video = document.getElementById('main-video');
-
-            if (playBtn && modal && closeBtn && video) {
-                // Open
-                playBtn.addEventListener('click', () => {
-                    modal.style.display = 'flex';
-                    // Small delay to allow display:flex to apply before opacity transition
-                    setTimeout(() => {
-                        modal.style.opacity = '1';
-                    }, 10);
-                    video.play();
-                });
-
-                // Close Function
-                const closeModal = () => {
-                    modal.style.opacity = '0';
-                    video.pause();
-                    setTimeout(() => {
-                        modal.style.display = 'none';
-                    }, 300); // Wait for transition
-                };
-
-                closeBtn.addEventListener('click', closeModal);
-
-                // Backdrop Click
-                modal.addEventListener('click', (e) => {
-                    if (e.target === modal) {
-                        closeModal();
-                    }
-                });
-
-                // Escape Key support
-                document.addEventListener('keydown', (e) => {
-                    if (e.key === 'Escape' && modal.style.display === 'flex') {
-                        closeModal();
-                    }
-                });
+        window.addEventListener('scroll', () => {
+            const wrap = document.querySelector('.header-wrap');
+            if (window.scrollY > 50) {
+                wrap.style.position = 'fixed';
+                wrap.style.top = '10px';
+            } else {
+                wrap.style.position = 'absolute';
+                wrap.style.top = '24px';
             }
         });
     </script>
+    <script src="js/gsap-animations.js"></script>
+
+
+
+
+<!-- Mobile Menu Overlay -->
+<div class="mobile-menu-overlay" id="mobileMenuGlobal">
+    <div class="mobile-menu-header">
+        <a class="logo" href="index.html">
+                <img src="images/logohanbee.png" alt="Leba Papers" class="site-logo" style="height: 40px; width: auto; object-fit: contain;">
+            </a>
+        <button class="mobile-menu-close" id="mobileMenuCloseGlobal" aria-label="Close menu">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+        </button>
+    </div>
+    <div class="mobile-menu-links">
+        <a href="about.html" class="mobile-top-link">COMPANY</a>
+        
+        <div class="mobile-accordion">
+            <button class="mobile-accordion-btn">GRAPHIC SPECIALITY <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="chevron"><path d="m6 9 6 6 6-6"/></svg></button>
+            <div class="mobile-accordion-content">
+                <div class="mobile-sub-group">
+                    <h4>Covering</h4>
+                    <a href="covering-buckram.html">Buckram</a>
+                    <a href="covering-classy-covers.html">Classy Covers</a>
+                </div>
+                <div class="mobile-sub-group">
+                    <h4>White &amp; Cream</h4>
+                    <a href="whitecream-eco-cream.html">Eco Cream</a>
+                    <a href="whitecream-ecowhite.html">Eco White</a>
+                </div>
+                <div class="mobile-sub-group">
+                    <h4>Kraft &amp; Recycled</h4>
+                    <a href="kraft-papers-boards.html">Kraft Papers</a>
+                    <a href="blackpaperboard-brilliantblack.html">Brilliant Black</a>
+                </div>
+                <div class="mobile-sub-group">
+                    <h4>Textures &amp; Art</h4>
+                    <a href="textures.html">Textured Boards</a>
+                    <a href="textures-perfumed-paper-board.html">Perfumed Paper Board</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="mobile-accordion">
+            <button class="mobile-accordion-btn">LABELS <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="chevron"><path d="m6 9 6 6 6-6"/></svg></button>
+            <div class="mobile-accordion-content">
+                <div class="mobile-sub-group">
+                    <h4>Paper Labels</h4>
+                    <a href="maplitho-paper-labels.html">Maplitho</a>
+                    <a href="chromo-paper-labels.html">Chromo</a>
+                    <a href="highgloss-paper-labels.html">High Gloss</a>
+                </div>
+                <div class="mobile-sub-group">
+                    <h4>Film Labels</h4>
+                    <a href="pvcclear-film-labels.html">PVC Clear</a>
+                    <a href="synthetic-film-labels.html">Synthetic</a>
+                </div>
+                <div class="mobile-sub-group">
+                    <h4>Special Labels</h4>
+                    <a href="removable-special-labels.html">Removable</a>
+                    <a href="kraftpaper-special-labels.html">Kraft Paper</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="mobile-accordion">
+            <button class="mobile-accordion-btn">DIGITAL PRINT <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="chevron"><path d="m6 9 6 6 6-6"/></svg></button>
+            <div class="mobile-accordion-content">
+                <div class="mobile-sub-group" style="margin-top:0;">
+                    <a href="digital-laser-printer-film.html">Laser Printer Film</a>
+                    <a href="digital-hp-indigo-sheet.html">HP Indigo</a>
+                    <a href="digital-dry-toner.html">Dry Toner</a>
+                </div>
+            </div>
+        </div>
+
+        <a href="contact.html" class="mobile-top-link">CONTACT</a>
+    </div>
+    <div class="mobile-menu-footer">
+        <div class="footer-block">
+            <strong>Sales issues</strong>
+            <a href="tel:+919388555999">+91 93 88 555 999</a>
+            <a href="mailto:lebapapers@gmail.com">lebapapers@gmail.com</a>
+        </div>
+        <div class="footer-block">
+            <strong>Office</strong>
+            <p>31/741A, Vyttila Junction<br>Ernakulam – 19<br>Kerala, India</p>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const menuBtn = document.querySelector('.mobile-menu-btn');
+        const closeBtn = document.getElementById('mobileMenuCloseGlobal');
+        const overlay = document.getElementById('mobileMenuGlobal');
+        
+        if(menuBtn && closeBtn && overlay) {
+            menuBtn.addEventListener('click', function(e) {
+                e.preventDefault();
+                overlay.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            });
+            
+            closeBtn.addEventListener('click', function() {
+                overlay.classList.remove('active');
+                document.body.style.overflow = '';
+            });
+        }
+
+        const accordions = document.querySelectorAll('.mobile-accordion-btn');
+        accordions.forEach(acc => {
+            acc.addEventListener('click', function() {
+                this.classList.toggle('active');
+                const content = this.nextElementSibling;
+                if (content.style.maxHeight) {
+                    content.style.maxHeight = null;
+                } else {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                }
+            });
+        });
+    });
+</script>
+
 </body>
 
 </html>
